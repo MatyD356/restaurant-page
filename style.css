@@ -11,10 +11,13 @@
 body {
   font-family: "Brawler", serif;
   font-family: "Allerta", sans-serif;
+  background-color: var(--bck-color);
 }
 img {
   border: 1px solid var(--main-color);
-  width: 15vh;
+}
+.logo-img {
+  width: 6rem;
   height: auto;
 }
 #content {
@@ -36,8 +39,27 @@ img {
   border-top: 1px solid var(--main-color);
 }
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   background-color: var(--bck-color);
+  background-image: url("../src/assets/aboutImg.jpg");
+  background-blend-mode: multiply;
+  background-size: cover;
   flex: 1 0 auto;
+  color: var(--font-color);
+}
+.about-title {
+  font-size: 4rem;
+  letter-spacing: 10px;
+  border-bottom: 5px solid var(--main-color);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
+}
+.aboutText {
+  width: 50%;
 }
 .footer {
   flex-shrink: 0;
@@ -53,6 +75,7 @@ a {
 }
 .btn {
   cursor: pointer;
+  border: none;
   border: 1px solid var(--main-color);
   padding: 1rem 2rem;
   color: var(--font-color);
