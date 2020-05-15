@@ -4,9 +4,6 @@ const about = (container) => {
     let aboutDiv = document.createElement("div");
     aboutDiv.classList.add("about");
     container.appendChild(aboutDiv);
-    // about img
-    let img = document.createElement("img");
-    img.src = Photo;
     //title div
     let title = document.createElement("h1");
     title.classList.add("about-title");

@@ -1,6 +1,7 @@
 import { navbar } from "./components/navbar.js"
 import { footer } from "./components/footer.js"
 import { about } from "./components/about.js"
+import { menu } from "./components/menu.js"
 
 class app {
     constructor(state) {
@@ -9,7 +10,7 @@ class app {
     }
     render() {
         navbar(this.container);
-        about(this.container);
+        menu(this.container);
         footer(this.container);
     }
 }
