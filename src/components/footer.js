@@ -7,7 +7,7 @@ const footer = (container) => {
     let atrLink = document.createElement("a");
     atrLink.classList.add("link");
     atrLink.setAttribute("href", "https://www.freepik.com/free-photos-vectors/logo");
-    atrLink.textContent = "Designed by Freepik";
+    atrLink.textContent = "Logo designed by Freepik";
     footerDiv.appendChild(atrLink);
     console.log("footer goes click");
 }
