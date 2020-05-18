@@ -113,7 +113,7 @@ a {
 .contact-form {
   margin: 2rem 0;
   font-size: 2rem;
-  padding: 2rem;
+  padding: 1rem;
   border: 1px solid var(--main-color);
   text-align: left;
 }
@@ -129,7 +129,7 @@ a {
   margin: 0.5rem 0;
 }
 .textarea {
-  height: 20vh;
+  height: 15vh;
 }
 .send-button {
   margin: 1rem 0;
