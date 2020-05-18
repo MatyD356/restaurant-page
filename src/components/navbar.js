@@ -1,4 +1,5 @@
-import Icon from '../assets/logo.jpg';
+import Icon from '../assets/logo.jpg'
+import { changeAppState } from '../index'
 
 const navbar = (container) => {
     //creating navbar
@@ -12,18 +13,27 @@ const navbar = (container) => {
     navDiv.appendChild(logo);
     //about button
     let aboutButton = document.createElement("button");
-    aboutButton.classList.add("btn");
+    aboutButton.onclick = function () {
+        changeAppState("about");
+    };
     aboutButton.textContent = "ABOUT";
+    aboutButton.classList.add("btn");
     navDiv.appendChild(aboutButton);
     //menu button
     let menuButton = document.createElement("button");
-    menuButton.classList.add("btn");
+    menuButton.onclick = function () {
+        changeAppState("menu");
+    };
     menuButton.textContent = "MENU";
+    menuButton.classList.add("btn");
     navDiv.appendChild(menuButton);
     //contact button
     let contactButton = document.createElement("button");
-    contactButton.classList.add("btn");
+    contactButton.onclick = function () {
+        changeAppState("contact");
+    };
     contactButton.textContent = "CONTACT";
+    contactButton.classList.add("btn");
     navDiv.appendChild(contactButton);
 }
 export { navbar }
